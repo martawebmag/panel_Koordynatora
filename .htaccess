@@ -1,0 +1,3 @@
+# Ustawienie czasu życia sesji na 20 minut
+php_value session.gc_maxlifetime 1200
+php_value session.cookie_lifetime 1200

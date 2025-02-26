@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header */
+header {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    background: url('images/checklist-1622517_1280.png') center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Kontener na tekst */
+.header-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Warstwa półprzezroczysta dla lepszego kontrastu tekstu */
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 5, 8, 0.88); 
+    z-index: 1;
+}
+
+/* Tekst wewnątrz headera */
+.header-text {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.header-text h2 {
+    font-size: 30px;
+    margin: 16px;
+    color: rgb(163, 207, 248);
+}
+
+.header-text p {
+    font-size: 18px;
+}
+
+/* Nawigacja pod headerem */
+nav.nav {
+    background: #03456e; 
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+nav.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav.nav ul li a:hover {
+    color: #cfd0d1; 
+}
+
+/* login */
+.container {
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.container_index {
+    flex-direction: column;
+}
+
+.login-container {
+    flex-direction: column;
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f4f7; /* Jasne tło */
+	border: 1px solid #b6b5b5;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.login-container h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #034180; /* Granatowy akcent */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #313131;
+}
+.input-group input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #a1bfddf8;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+.input-group input:focus {
+    border-color: #023364;
+    outline: none;
+}
+
+.error {
+    margin: 5px 0 0 10px;
+	font-size: 13px;
+	color: rgb(233, 57, 4);
+
+}
+.error2 {
+    margin: 5px 0 0 10px;
+	font-size: 15px;
+	color: rgb(233, 57, 4);
+
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+	margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0962af; /* Granatowy #1a2a38 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn2 {
+	width: 100%;
+    padding: 12px;
+	margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0962af; /* Granatowy */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn3 {
+    width: 30%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3b3b3b; /* Granatowy */
+    box-shadow:  4px 4px 2px rgba(68, 68, 68, 0.3);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #074f8f; /* Ciemniejszy odcień granatu */
+}
+.btn2:hover {
+    background-color: #074f8f; /* Ciemniejszy odcień granatu */
+}
+.btn3:hover {
+    background-color: #494949; /* Ciemniejszy odcień granatu */
+}
+.inform {
+	width: 60%;
+	margin-right: 40px;
+
+}
+.tekst {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 16px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #363535;
+	border-radius: 3px;
+	border: none;
+}
+
+.tekst p {
+	font-size: 18px;
+    color: #3d3d3d;
+}
+.tekst h3{
+	margin-bottom: 20px;
+	font-size: 24px;
+    color: #3d3d3d;
+}
+/*footer*/
+footer {
+	height: 80px;
+	line-height: 80px;
+	background-color: #03456e;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+
+.panel_container {
+    width: 1000px;
+    padding: 30px;
+    background-color: rgb(240, 240, 240);
+}
+.user_header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: 1px solid #888787;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #d8d6d6;
+}
+.user_header h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.user_header a {
+    text-decoration: none;
+    font-size: 16px;
+ }
+ .user_header p {
+    margin: 6px 0;
+    font-size: 16px;
+ }
+ .user_text h3 {
+    margin-bottom: 20px;
+ }
+.user_text li {  
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.zalogowanie {
+    width: 960px;
+    text-align: right;
+    font-size: 15px;
+    color: #012841;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 600px;
+    }
+    .container {
+        width: 600px;
+    }
+     .header_logo{
+		width: 100px;
+        height: 100px;
+	}
+	.header-text h2 {
+	 font-size: 24px;
+	}
+    .header-text2 p {
+        display: none;
+    }
+
+    nav .strefa {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+    body {
+        width: 600px;
+    }
+    .container {
+        width: 600px;
+    }
+     .header_logo{
+		width: 100px;
+        height: 100px;
+	}
+	.header-text h2 {
+	 font-size: 24px;
+	}
+    .header-text2 p {
+        display: none;
+    }
+
+    nav .strefa {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 772px) {
+    body {
+        width: 800px;
+    }
+    .container {
+        width: 800px;
+    }
+     .header_logo{
+		width: 150px;
+        height: 150px;
+	}
+	.header-text h2 {
+	 font-size: 28px;
+	}
+    .header-text2 p {
+        display: none;
+    }
+
+    nav .strefa {
+        display: none;
+    }
+}
+@media (min-width: 772px) and (max-width: 1000px) {
+    .header_logo{
+		width: 150px;
+        height: 150px;
+	}
+    .header-text2 p {
+        display: none;
+    }
+    nav .strefa {
+        display: none;
+    }
+}
